@@ -3,6 +3,7 @@ body {
     font-family: Ahsing;
     background-color: #ffffff; /* Slight off-white background */
     color: #000; /* Black text */
+
 }
 
 .top {
@@ -16,7 +17,7 @@ body {
     color: #000000;
     padding: 10px;
     display: flex;
-    
+    font-size:120%;
     justify-content: space-between;
     align-items: center;
 }
@@ -53,4 +54,61 @@ body {
 .redBar{
     padding: 20px;
     background-color: red;
+}
+.spacer
+{
+    width: 100%;
+    height: 115px;
+}
+
+.blogBody {
+    padding-top:5%;
+    padding-bottom:5%;
+    cursor:none;
+}
+
+.contentCard {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right:10%;
+    font-size:110%;
+    cursor:pointer;
+    
+    /* background-color: #000; */
+}
+
+#titleVid {
+    text-align: cetner;
+    width: 10%;
+    /* margin-left: 25%; */
+    /* margin-right: 25%; */
+}
+
+.articleHeader {
+    font-size: 150%;
+}
+
+.articleDate {
+    font-size: 100%;
+    color: rgb(66, 66, 66);
+}
+
+.articleDesc {
+    font-size: 120%;
+}
+
+.photoSec{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.photo {
+    /* width:fit-content; */
+    margin-top: 5%;
+
 }

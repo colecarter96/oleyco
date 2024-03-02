@@ -25,12 +25,17 @@
 
             
             <!-- <img src="../Oleyco..mp4"/> -->
-            <div class="title">Oleyco.</div>
+            <div class="title">
+                <!-- <video id="bottomVid" src="../content/OleycoConstant.mp4" alt="BRUHHHH"/> -->
+                <video id="titleVid" autoplay muted>
+                    <source src="../content/0leyco..mp4" type="video/mp4">
+                </video>
+            </div>
             
 
             <div class="right-buttons">
                 <a href="contact.html" class="nav-button">Contact</a>
-                <a href="#" class="nav-button">Services</a>
+                <a href="#" class="nav-button">About</a>
             </div>
         </div>
     </div>
@@ -42,9 +47,29 @@
     
         
   
-
-<script>
-</script>
+    <script>
+    
+        var titleVid = document.getElementById("titleVid");
+        var count = 1;
+        titleVid.addEventListener('ended', switchVideo, false);
+        function switchVideo(e){
+    
+            if(count % 2 === 0){
+                vid.setAttribute('src', '../content/Oleyco..mp4');
+            }else {
+                vid.setAttribute('src', '../content/OleycoConstant.mp4');
+            }
+            count++;
+            vid.load();
+            try {
+            setTimeout(()=>vid.play(), 2000);
+            } catch (err){
+            console.log(err)
+            }
+      
+        } 
+    
+    </script>
 
 </body>
 </html>
