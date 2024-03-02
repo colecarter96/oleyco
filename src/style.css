@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Ahsing;
+    background-color: #ffffff; /* Slight off-white background */
+    color: #000; /* Black text */
+}
+
+.top {
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+
+.top-bar {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-buttons, .right-buttons {
+    display: flex;
+    align-items: center;
+    /* margin-right: 20px; Increased space between the top left and each individual button */
+    /* padding: 20px;*/
+    padding-right: 40px; 
+    padding-left: 40px;
+    
+}
+
+.nav-button {
+    margin-right: 10px;
+    color: #000; /* Black text */
+    text-decoration: none;
+    padding: 20px;
+    
+    cursor: crosshair;
+
+}
+
+.title {
+    /* flex-grow: 1; */
+    flex: 1;
+    /* margin-right: auto;
+    margin-left: auto; */
+    text-align:center;
+    font-size: 150%;
+}
+
+.redBar{
+    padding: 20px;
+    background-color: red;
+}
