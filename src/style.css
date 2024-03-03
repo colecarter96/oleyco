@@ -122,10 +122,19 @@ body {
     .forDesktop {
       display: none;
     }
-  }
+
+    .contentCard{
+        font-size: 130%;
+    }
+
+    .top-bar {
+        font-size: 150%;
+    }
+
+}
   
-  @media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) {
     .forMobile {
       display: none;
     }
-  }
+}
