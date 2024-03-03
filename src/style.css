@@ -32,13 +32,13 @@ body {
     align-items: center;
     /* margin-right: 20px; Increased space between the top left and each individual button */
     /* padding: 20px;*/
-    padding-right: 40px; 
-    padding-left: 40px;
+    padding-right: 2%; 
+    padding-left: 2%;
     
 }
 
 .nav-button {
-    margin-right: 10px;
+    margin-right: 2%;/*commenting this shit*/
     color: #000; /* Black text */
     text-decoration: none;
     padding: 20px;
@@ -125,18 +125,23 @@ body {
 
 }
 
+.forMobile{
+    display:none;
+}
+
 @media screen and (max-width: 579px) {
     .forDesktop {
       display: none;
+    }
+    
+    .forMobile{
+        display:inline-block;
     }
 
     .contentCard{
         font-size: 130%;
     }
 
-    .top-bar {
-        font-size: 150%;
-    }
 
 }
   
