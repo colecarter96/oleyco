@@ -66,23 +66,7 @@ body {
     height: 115px;
 }
 
-.blogBody {
-    padding-top:5%;
-    padding-bottom:5%;
-    cursor:none;
-}
 
-.contentCard {
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-left: 10%;
-    padding-right:10%;
-    font-size:110%;
-    cursor:pointer;
-    
-    /* background-color: #000; */
-}
 
 #titleVid {
     text-align: cetner;
@@ -91,47 +75,42 @@ body {
     /* margin-right: 25%; */
 }
 
-#titlePic {
-    text-align: cetner;
-    width: 10%;
-    /* margin-left: 25%; */
-    /* margin-right: 25%; */
-}
 
-.articleHeader {
-    font-size: 150%;
-}
 
-.articleDate {
-    font-size: 100%;
-    color: rgb(66, 66, 66);
-}
 
-.articleDesc {
+.articleBody {
+    margin-top: 7%;
+    margin-left:20%;
+    margin-right: 20%;
     font-size: 120%;
 }
 
-.photoSec{
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-top: 5%;
-    padding-bottom: 10%;
+.articleTitle {
+    font-size: 110%;
 }
 
-.photo {
-    /* width:fit-content; */
-    margin-top: 5%;
+.articleDate {
+    margin-top: 0%;
+    font-size:90%;
+    color: rgb(67, 67, 67);  
+}
+
+.articleAuthor {
+    margin-bottom: -10;
+    font-size: 90%;
+    color: rgb(67, 67, 67);
+}
+
+.articleText{
 
 }
 
-@media screen and (max-width: 579px) {
+
+
+
+@media screen and (max-width: 480px) {
     .forDesktop {
       display: none;
-    }
-
-    .contentCard{
-        font-size: 130%;
     }
 
     .top-bar {
@@ -140,7 +119,7 @@ body {
 
 }
   
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 481px) {
     .forMobile {
       display: none;
     }
