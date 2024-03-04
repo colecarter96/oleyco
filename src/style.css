@@ -113,16 +113,21 @@ body {
 
 .photoSec{
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
     padding-top: 5%;
     padding-bottom: 10%;
+
+    /* display:inline */
 }
 
 .photo {
     /* width:fit-content; */
     margin-top: 5%;
-
+    width: 40%;
+    flex: 100%;
+    /* width: 150%; */
+    
 }
 
 .forMobile{
@@ -140,6 +145,10 @@ body {
 
     .contentCard{
         font-size: 130%;
+    }
+
+    .photo {
+        width: 60%;
     }
 
 

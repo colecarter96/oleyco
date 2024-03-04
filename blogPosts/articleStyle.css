@@ -11,6 +11,10 @@ body {
 
 }
 
+p {
+    line-height: 175%;
+}
+
 .top {
     position:fixed;
     top: 0;
@@ -82,11 +86,11 @@ body {
     margin-top: 7%;
     margin-left:20%;
     margin-right: 20%;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 .articleTitle {
-    font-size: 110%;
+    font-size: 150%;
 }
 
 .articleDate {
@@ -102,8 +106,19 @@ body {
 }
 
 .articleText{
+    margin-bottom: 8%;
+    font-size: 110%;
+    /* text-align: center; */
+}
+
+.articlePhoto {
+    margin-bottom: 8%;
+    text-align: center;
+    /* text-align: center; */
 
 }
+
+
 
 
 
