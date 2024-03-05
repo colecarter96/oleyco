@@ -8,8 +8,9 @@
  
   <meta name="author" content="">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/stylesheet.css">
   <link rel="stylesheet" href="./articleStyle.css">
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href=
     "https://i.pinimg.com/564x/df/9b/9b/df9b9bc3f3307a818ddf25c8282a0a8b.jpg"
           type="image/x-icon">
@@ -40,6 +41,30 @@
     
                 
         </div>
+
+        <div class="mobileNav">
+            <div class="mNav">
+                <p class="logo" onclick="location.href='https://www.instagram.com/oleyco_/?hl=en'" style="cursor: crosshair;">Oleyco.</p>
+                <!-- Navigation links (hidden by default) -->
+
+                <div class="hamburg">
+                    <i id="hamButton" class="fa fa-bars"></i>
+                </div>
+            
+            </div>
+
+
+            <div id="hamLinks" class="myLinks">
+                <a class="navButton" href="../newSrc/home.html">Home</a>
+                <a class="navButton" href="../newSrc/visuals.html">Visuals</a>
+                <a class="navButton" href="">Contact</a>
+                <a class="navButton" href="../newSrc/blog.html">Blog</a>
+            </div>
+            
+            
+        </div>
+
+        
 
         
         
@@ -149,7 +174,20 @@
         
   
 
-    <script>
+    <script type="text/javascript">
+
+        var temp = 0;
+        document.getElementById("hamButton").onclick = function() {
+            if(temp == 0){
+                document.getElementById("hamLinks").style.display = "grid";
+            
+                temp = 1;
+            }else{
+                document.getElementById("hamLinks").style.display = "none";
+        
+                temp = 0;
+            }
+        }
     </script>
 
 </body>
