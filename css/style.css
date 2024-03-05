@@ -5,7 +5,9 @@
 
 body {
     margin: 0;
-    font-family: "pp_morisemibold";
+    /* font-family: "pp_morisemibold"; */
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
     background-color: #fff3cf; /* Slight off-white background */
     color: #000; /* Black text */
 }
@@ -140,8 +142,31 @@ h1, h2, h3, h4, h5 {
 
 }
 
+.latestBlogPost {
+    margin-top: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    background-color: red;
+    color: #000000;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 140%;
+    padding-bottom: 25px;
+}
 
-@media screen and (max-width: 1000px) {
+.lBPLabel {
+    writing-mode:vertical-lr;
+    text-align: center;
+    padding-left: 25px;
+    transform: rotate(180deg);
+    /* text-orientation:sideways; */
+}
+
+
+
+
+@media screen and (max-width: 800px) {
     .desktopNav {
       display: none;
     }
@@ -160,7 +185,7 @@ h1, h2, h3, h4, h5 {
 
 }
   
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     .mobileNav {
       display: none;
     }
