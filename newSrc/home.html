@@ -9,6 +9,7 @@
   <meta name="author" content="">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href=
     "https://i.pinimg.com/564x/df/9b/9b/df9b9bc3f3307a818ddf25c8282a0a8b.jpg"
           type="image/x-icon">
@@ -40,6 +41,22 @@
                 
         </div>
 
+        <div class="mobileNav">
+            <p class="logo" onclick="location.href='https://www.instagram.com/oleyco_/?hl=en'" style="cursor: crosshair;">Oleyco.</p>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        
+
         
         
     </div>
@@ -63,14 +80,21 @@
             <p>Lastest Article</p>
         </div>
 
-        <div class="LBPTitle">
+        <div class="lBPTitle">
             <p class="articleHeader">GERMAN ARMY TRAINER!</p>
             <p class="articleDate">FEB 28, 2024</p>
             <p class="articleDesc">The German Army Trainer has such a rich history. The sleek silhoutte is now more popular than ever and to some may be the cool guy samba.</p>
         </div>
 
+        <div class="O">
+            <p>O.</p>
+        </div>
+
     </div>
+
+    <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1W9OlyFk2yVNxiHsouaMr7?utm_source=generator" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     
+
     
    
     
@@ -86,7 +110,14 @@
   
     <script>
     
-       
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
     </script>
 
 </body>
