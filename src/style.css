@@ -20,11 +20,11 @@ body {
 .top-bar {
     background-color: #ffffff;
     color: #000000;
-    padding: 10px;
-    display: flex;
-    font-size:120%;
-    justify-content: space-between;
-    align-items: center;
+    /* padding: 10px; */
+    /* display: flex; */
+    font-size:140%;
+    /* justify-content: space-between;
+    align-items: center; */
 }
 
 .left-buttons, .right-buttons {
@@ -38,13 +38,20 @@ body {
 }
 
 .nav-button {
-    margin-right: 2%;/*commenting this shit*/
+    /* margin-right: 2%;/*commenting this shit*/
     color: #000; /* Black text */
     text-decoration: none;
-    padding: 20px;
+    /* padding: 20px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size:130%;
     
     cursor: crosshair;
 
+}
+
+.nav-button:hover{
+    color: red;
 }
 
 .title {
@@ -82,6 +89,10 @@ body {
     cursor:pointer;
     
     /* background-color: #000; */
+}
+
+.contentCard:hover {
+    color: red;
 }
 
 #titleVid {
@@ -124,7 +135,7 @@ body {
 .photo {
     /* width:fit-content; */
     margin-top: 5%;
-    width: 40%;
+    width: 35%;
     flex: 100%;
     /* width: 150%; */
     
@@ -158,4 +169,14 @@ body {
     .forMobile {
       display: none;
     }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+  
+.nav-left, .nav-right {
+    flex: 1;
+    text-align: center;
 }

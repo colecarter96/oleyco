@@ -7,41 +7,42 @@
   <title>Oleyco</title>
  
   <meta name="author" content="">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/stylesheet.css">
 
 </head>
 
 <body>
-
     
 
-    <div class="top">
-        <div class="redBar"></div>
+    <div class="header">
         
-        <div class="top-bar">
-            
-            <div class="left-buttons">
-                <a href="home.html" class="nav-button">Home</a>
-                <!-- <a href="#" class="nav-button">Blog</a> -->
-                <a href="photos.html" class="nav-button">Photos</a>
-            </div>
+        <div class="redBar"></div>
 
-            
-            <!-- <img src="../Oleyco..mp4"/> -->
-            <div class="title">
-                <!-- <video id="bottomVid" src="../content/OleycoConstant.mp4" alt="BRUHHHH"/> -->
-                <video id="titleVid" autoplay muted>
-                    <source src="../content/0leyco..mp4" type="video/mp4">
-                </video>
-            </div>
-            
+        <div class="desktopNav">
 
-            <div class="right-buttons">
-                <a href="contact.html" class="nav-button">Contact</a>
-                <a href="#" class="nav-button">About</a>
-            </div>
+            <p class="logo" onclick="location.href='https://www.instagram.com/oleyco_/?hl=en'" style="cursor: crosshair;">Oleyco.</p>
+
+            <a class="navButton" href="./home.html">Home</a>
+            <a class="navButton" href="./visuals.html">Visuals</a>
+            <a class="navButton" href="../blogPosts/germanArmyTrainer.html">Contact</a>
+            <a class="navButton" href="./blog.html">Blog</a>
+                    
+                
+    
+            
+    
+                
+    
+                
         </div>
+
+        
+        
     </div>
+    
+
+
 
     <div class="spacer">
         &nbsp;
@@ -128,36 +129,19 @@
    
     
     </div>    
-    
 
-    
+    <!-- <div class="redLine"></div>
+
+    <p>HELLLOOOO</p> -->
+
 
     
         
   
-
     <script>
     
-        var titleVid = document.getElementById("titleVid");
-        var count = 1;
-        titleVid.addEventListener('ended', switchVideo, false);
-        function switchVideo(e){
-    
-            if(count % 2 === 0){
-                vid.setAttribute('src', '../content/Oleyco..mp4');
-            }else {
-                vid.setAttribute('src', '../content/OleycoConstant.mp4');
-            }
-            count++;
-            vid.load();
-            try {
-            setTimeout(()=>vid.play(), 2000);
-            } catch (err){
-            console.log(err)
-            }
-      
-        } 
-    
+       
     </script>
+
 </body>
 </html>
