@@ -42,17 +42,25 @@
         </div>
 
         <div class="mobileNav">
-            <p class="logo" onclick="location.href='https://www.instagram.com/oleyco_/?hl=en'" style="cursor: crosshair;">Oleyco.</p>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
+            <div class="mNav">
+                <p class="logo" onclick="location.href='https://www.instagram.com/oleyco_/?hl=en'" style="cursor: crosshair;">Oleyco.</p>
+                <!-- Navigation links (hidden by default) -->
+
+                <div class="hamburg">
+                    <i id="hamButton" class="fa fa-bars"></i>
+                </div>
+            
             </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
+
+
+            <div id="hamLinks" class="myLinks">
+                <a class="navButton" href="./home.html">Home</a>
+                <a class="navButton" href="./visuals.html">Visuals</a>
+                <a class="navButton" href="../blogPosts/germanArmyTrainer.html">Contact</a>
+                <a class="navButton" href="./blog.html">Blog</a>
+            </div>
+            
+            
         </div>
 
         
@@ -74,7 +82,7 @@
         <img id="homePhoto" src="https://i.pinimg.com/736x/c1/6e/a0/c16ea01b06dc053cb0805ac4d2ba7505.jpg" alt="FUCK"/>
     </div>
 
-    <div class="latestBlogPost">
+    <div class="latestBlogPost" onclick="location.href='../blogPosts/germanArmyTrainer.html'" >
 
         <div class="lBPLabel">
             <p>Lastest Article</p>
@@ -108,16 +116,22 @@
     
         
   
-    <script>
+    <script type="text/javascript">
     
-    function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+        var temp = 0;
+        document.getElementById("hamButton").onclick = function() {
+            if(temp == 0){
+                document.getElementById("hamLinks").style.display = "grid";
+            
+                temp = 1;
+            }else{
+                document.getElementById("hamLinks").style.display = "none";
+        
+                temp = 0;
+            }
         }
-    }
+            
+    
     </script>
 
 </body>

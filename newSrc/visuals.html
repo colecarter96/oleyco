@@ -40,6 +40,28 @@
                 
         </div>
 
+        <div class="mobileNav">
+            <div class="mNav">
+                <p class="logo" onclick="location.href='https://www.instagram.com/oleyco_/?hl=en'" style="cursor: crosshair;">Oleyco.</p>
+                <!-- Navigation links (hidden by default) -->
+
+                <div class="hamburg">
+                    <i id="hamButton" class="fa fa-bars"></i>
+                </div>
+            
+            </div>
+
+
+            <div id="hamLinks" class="myLinks">
+                <a class="navButton" href="./home.html">Home</a>
+                <a class="navButton" href="./visuals.html">Visuals</a>
+                <a class="navButton" href="../blogPosts/germanArmyTrainer.html">Contact</a>
+                <a class="navButton" href="./blog.html">Blog</a>
+            </div>
+            
+            
+        </div>
+
         
         
     </div>
@@ -141,7 +163,20 @@
     
         
   
-    <script>
+    <script type="text/javascript">
+
+        var temp = 0;
+        document.getElementById("hamButton").onclick = function() {
+            if(temp == 0){
+                document.getElementById("hamLinks").style.display = "grid";
+            
+                temp = 1;
+            }else{
+                document.getElementById("hamLinks").style.display = "none";
+        
+                temp = 0;
+            }
+        }
     
        
     </script>

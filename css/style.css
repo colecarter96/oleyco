@@ -33,43 +33,75 @@ h1, h2, h3, h4, h5 {
     background-color: red;
 }
 
-.mobileNav {
-    overflow: hidden;
-    background-color: #ff0000;
-    position: relative;
+.mNav {
+    background-color: red;
+    width: 100%;
+    /* display: flex; */
     height: 170px;
+    text-align: center;
 }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-.mobileNav #myLinks {
-    display: none;
-}
-  
-  /* Style navigation menu links */
+
 .mobileNav a {
-    color: white;
-    padding: 35px;
     text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-  
-  /* Style the hamburger menu */
-.mobileNav a.icon {
-    background: rgb(0, 0, 0);
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 50%;
+    color: black;
+    background-color: red;
+    padding-right: 50px;
+    /* display: none; */
+    /* display: none; */
+    font-size: 200%;
     
 }
-  
-  /* Add a grey background color on mouse-over */
-.mobileNav a:hover {
-    background-color: #ddd;
-    color: rgb(255, 255, 255);
+
+.myLinks {
+    align-items: center;
+    width: 100%;
+    float:inline-start;
+    /* display: grid; */
+    display: none;
+    text-align: right;
+    
+
 }
+
+.mobileNav p {
+    font-weight: 700;
+    font-size: 200%;
+    font-family: "Playfair Display", serif;
+    float:left;
+    padding-right: 2%;
+    margin-left: 30px;
+
+
+}
+
+.hamburg i {
+    float: right;
+    padding: 50px;
+    height: 110%;
+    margin-right: 20px;
+    background-color: red;
+    color: black;
+    cursor: cell;
+
+    /* width: 120%; */
+    /* width: 200%; */
+
+}
+
+#hamButton {
+    color: black;
+    z-index: 8;
+}
+
+.hamburg i:hover {
+    color: #fff3cf;
+}
+
+
+
+
+  
+
 
 .desktopNav {
     /* display: flex; */
@@ -194,7 +226,12 @@ h1, h2, h3, h4, h5 {
     padding: 10px;
     font-size: 140%;
     padding-bottom: 40px;
+    cursor: cell;
     
+}
+
+.latestBlogPost:hover {
+    color: #fff3cf;
 }
 
 .lBPLabel {
